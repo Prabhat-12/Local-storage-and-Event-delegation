@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background: url(/bg.jpg) no-repeat center ;
+    opacity: 0.8;
+    background-size: cover;
+   min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+.container{
+    background: azure;
+    max-width: 300px;
+    /* height: 200px; */
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 25px 0px 25px;
+    
+}
+svg{
+    width: 150px;
+    fill: azure;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 50%;
+    /* width: 200px; */
+    margin-bottom: 15px;
+}
+h2 {
+    position: relative;
+    text-align: center;
+    padding: 2px;
+    font-weight: 200;
+    background: #000000c7;
+    color: azure;
+    width: 200px;
+    /* margin: 0px 21px; */
+    top: 5px;
+    left: 46px;
+    border-radius: 0px 115px 0px 115px;
+}
+  .plates {
+    margin: 0;
+    padding: 7px 7px;
+    text-align: left;
+    list-style: none;
+  }
+  .plates li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    font-weight: 100;
+    display: flex;
+  }
+  .plates label {
+    flex: 1;
+    cursor: pointer;
+}
+
+  .plates input {
+    display: none;
+  }
+  .plates input + label:before {
+    content: "⬜️";
+    margin-right: 10px;
+  }
+  
+  .plates input:checked + label:before {
+    content: "👍";
+  }
+  .add-items {
+    position: relative;
+    bottom: 5px;
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  .add-items input {
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0px 25px 0px 25px;
+  }
+  input[type="text"] {
+    margin: 0px 5px;
+}
+input[type="submit"] {
+    margin: 0px 5px;
+    background-color: #000000cf;
+    color: azure;
+}
